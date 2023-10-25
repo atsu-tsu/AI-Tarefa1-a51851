@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveShell : MonoBehaviour
 {
     
-    float speed = 1f;
+    public float speed = 1f;
 
     void Start()
     {
@@ -15,6 +15,6 @@ public class MoveShell : MonoBehaviour
     
     void Update()
     {
-        this.transform.Translate(0, Time.deltaTime * speed * 0.5f, Time.deltaTime*speed);
+        this.transform.Translate(0, 0, Time.deltaTime*speed);
     }
 }
